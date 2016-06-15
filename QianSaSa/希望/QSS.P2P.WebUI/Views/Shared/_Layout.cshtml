@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/HtmlPage/css/reset.css" rel="stylesheet" />
+    <link href="~/HtmlPage/css/style.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="sub-page">
+        <div class="wrap">
+            <div class="header">
+                <a href="index.html">
+                    <div class="logo">
+                        <img src="~/HtmlPage/images/666.png" alt="" style="margin-top:22px;" />
+                    </div>
+                </a>
+                <div class="nav">
+                    <ul>
+                        <li><a href="/Home/Index">首页</a></li>
+                        <li><a href="#">我要投资</a></li>
+                        <li><a href="#">我要借款</a></li>
+                        <li class="active"><a href="#">关于我们</a></li>
+                        <li><a href="#">网站社区</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+    @RenderBody()
+    <div class="footer">
+        <div class="wrap">
+            <div class="footer-content">
+                <div class="col1">
+                    <h3>关于我们 US</h3>
+                    <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus. </p>
+                </div>
+                <div class="col2">
+                    <h3>导航</h3>
+                    <ul class="footer-nav">
+                        <li><a href="/Home/Index">首页</a></li>
+                        <li><a href="#">我要投资</a></li>
+                        <li><a href="#">我要借款</a></li>
+                        <li><a href="#">新人指南</a></li>
+                        <li><a href="#">网站社区</a></li>
+                    </ul>
+                </div>
+                <div class="col3">
+                    <h3>Facebook</h3>
+                    <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occas circumstances occur in which toil and pain can <a href="http://www.facebook.com/">http://www.facebook.com/</a></p>
+                    <p>In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best.</p>
+                </div>
+                <div class="col4">
+                    <h3>友情链接</h3>
+                    <a href="#"><img src="~/HtmlPage/./images/facebook.png" alt="" /></a>
+                    <a href="#"><img src="~/HtmlPage/./images/feed.png" alt="" /></a>
+                    <a href="#"><img src="~/HtmlPage/images/twitter.png" alt="" /></a>
+                    <a href="#"><img src="~/HtmlPage/images/flickr.png" alt="" /></a>
+                    <div class="clear"></div>
+                    <div class="copy">&copy; 2012 All rights Reseverd | Design by <a href="http://w3layouts.com">W3Layouts.com</a></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

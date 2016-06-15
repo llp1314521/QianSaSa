@@ -1,0 +1,117 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/HtmlPage/js/jquery.min.js" type="text/javascript"></script>
+    <script src="~/HtmlPage/js/safe.js" type="text/javascript"></script>
+    <script src="~/HtmlPage/js/top.js" type="text/javascript"></script>
+    <link href="~/HtmlPage/css/safe/global.css" rel="stylesheet" />
+    <title>钱洒洒登录页面</title>
+</head>
+<body class="login">
+
+    <div id="head">
+        <div class="clearfix">
+            <span class="phone iconG05 iconG05_1 fr mt30"></span>
+            <p class="valignMid fl">
+                <a href="#"><img src="~/HtmlPage/images/logo2.jpg" alt="钱洒洒Logo" /></a>
+                <strong class="fontF01">会员登录</strong>
+            </p>
+        </div>
+    </div>
+    <div id="content">
+
+        <div class="sign clearfix">
+            <div class="pic">
+                <ul id="slides">
+                    <li><a href="#"><img src="~/HtmlPage/images/safe/pic1.jpg" /> width="461" height="303"></a></li>
+                    <li><a href="#"><img src="~/HtmlPage/images/safe/pic2.jpg" /> width="461" height="303"></a></li>
+                    <li><a href="#"><img src="~/HtmlPage/images/safe/pic3.jpg" /> width="461" height="303"></a></li>
+                </ul>
+                <ul id="pagination">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="zi fontS14">
+                <h3><span>会员登录</span></h3>
+                <div class="huiyuan">
+                    <div class="ewbox account">
+                        <i></i>
+                        <input type="text" value="请输入账户名/手机号" />
+                        <span class="right"></span>
+                    </div>
+                    <div class="ewbox pw">
+                        <i></i>
+                        <input type="text" value="请输入密码" id="pw1" />
+                        <input type="password" id="pw2" style="display:none;" />
+                        <span class="wrong"></span>
+                    </div>
+                    <div class="mt10 btn_login">
+                        <input type="button" value="登 录" onclick="alert('恭喜您，登录成功')" />
+                    </div>
+                    <p class="mt10 fontS12 fontC01">如果您还不是俺们的会员，快<a class="fontC06" href="/UserInfo/Register">免费注册</a>吧！</p>
+                    <div class="mt10 clearfix">
+                        <a href="#" class="fr fontC07">忘记登录密码？</a>
+                        <p class="fl valignMid">
+                            <span class="fontF01 fontC01 fontS14">其它登录方式</span>
+                            <a href="#" class="logway_qq" title="QQ账号登录"></a>
+                            <a href="#" class="logway_wx" title="微信登录"></a>
+                            <a href="#" class="logway_xl" title="新浪登录"></a>
+                        </p>
+                    </div>
+                    <i class="rblogo"></i>
+                    <ul class="mt10">
+                        <li><a href="#">去首页</a></li>
+                        <li><a href="#">去看看其它好玩的</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="foot">
+        <div class="inner">
+            <p align="center">
+                <a href="#">关于我们</a>
+                <em>|</em>
+                <a href="#">企业资质</a>
+                <em>|</em>
+                <a href="#">帮助中心</a>
+                <em>|</em>
+                <a href="#">广告服务</a>
+                <em>|</em>
+                <a href="#">会员服务</a>
+                <em>|</em>
+                <a href="#">新手指南</a>
+                <em>|</em>
+                <a href="#">网站地图</a>
+                <em>|</em>
+                <a href="#">支付方式</a>
+                <em>|</em>
+                <a href="#">意见投诉</a>
+                <em>|</em>
+                <a href="#">友情链接</a>
+                <em>|</em>
+                <a href="#">客服中心</a>
+            </p>
+            <p align="center">
+                <span>展会合作：010-00000000</span>
+                <span class="ml10">招商热线：010-00000000</span>
+                <span class="ml10">传真：010-00000000</span>
+                <span class="ml10">电子邮箱：look@163.com</span>
+            </p>
+            <p align="center">Copyright 2008 www.******.com Inc.All Rights Reserved. ***** 版权所有</p>
+            <p align="center">增值电信业务经营许可证 000－0000000　 冀ICP备00000000号</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

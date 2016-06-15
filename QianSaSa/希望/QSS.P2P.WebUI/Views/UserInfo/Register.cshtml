@@ -1,0 +1,131 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/HtmlPage/css/safe/global.css" rel="stylesheet" />
+    <script type="text/javascript" language="javascript" src="~/HtmlPage/js/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript" src="~/HtmlPage/js/safe.js"></script>
+    <script type="text/javascript" language="javascript" src="~/HtmlPage/js/top.js"></script>
+    <title>钱洒洒注册会员</title>
+</head>
+<body class="register">
+
+    <div id="head">
+        <div class="clearfix">
+            <span class="phone iconG05 iconG05_1 fr mt30"></span>
+            <p class="valignMid fl">
+                <a href="#"><img src="~/HtmlPage/images/logo2.jpg" alt="钱洒洒Logo" /></a>
+                <strong class="fontF01">会员注册</strong>
+            </p>
+        </div>
+    </div>
+    <div id="content">
+
+        <div class="box">
+            <div class="tbar fontS16 fontBold fontC02" align="center">轻松10秒注册，终身享受服务！</div>
+            <div class="con clearfix">
+                <div class="nr_r">
+                    <p class="fontS14 fontBold">我已是会员，<a href="/UserInfo/Login">立即登录</a></p>
+                </div>
+                <div class="nr_l">
+                    <div class="mb10">
+                        <strong class="fontS14 fontC02">会员名：</strong>
+                        <input type="text" class="editbox w200" id="txtuName" />
+                        <span class="iconG05 iconG05_3"></span>
+                    </div>
+                    <div class="mb10">
+                        <strong class="fontS14 fontC02">登录密码：</strong>
+                        <input type="text" class="editbox w200" id="txtuPwd" />
+
+                    </div>
+                    <div class="mb10">
+                        <strong class="fontS14 fontC02">手机号码：</strong>
+                        <input type="text" class="editbox w200" id="txtuTel" />
+                        <span class="iconG05 iconG05_4"></span>
+                        @*<p class="err">手机号码填写错误</p>*@
+                    </div>
+                    <div class="mb10 valignMid">
+                        <strong class="fontS14 fontC02">验证码：</strong>
+                        <input type="text" class="editbox w100" id="txtValidata" />
+                        <img src="~/HtmlPage/images/yazhengma.jpg" />
+                    </div>
+                    <div>
+                        <div style="margin-left:70px;">
+                            <input type="button" class="btn_register" onclick="location.href='register_success.html'" />
+                            <p class="mt5 valignMid fontC02">
+                                <input type="checkbox" id="ck1" />
+                                <label for="ck1"> 完善详细资料</label><br />
+                                <input type="checkbox" id="ck2" />
+                                <label for="ck2"><span>我已阅读并接受</span><a class="agreement" href="javascript:void(0)">《一个神秘而有趣的协议》</a></label>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="foot">
+            <div class="inner">
+                <p align="center">
+                    <a href="#">关于我们</a>
+                    <em>|</em>
+                    <a href="#">企业资质</a>
+                    <em>|</em>
+                    <a href="#">帮助中心</a>
+                    <em>|</em>
+                    <a href="#">广告服务</a>
+                    <em>|</em>
+                    <a href="#">会员服务</a>
+                    <em>|</em>
+                    <a href="#">新手指南</a>
+                    <em>|</em>
+                    <a href="#">网站地图</a>
+                    <em>|</em>
+                    <a href="#">支付方式</a>
+                    <em>|</em>
+                    <a href="#">意见投诉</a>
+                    <em>|</em>
+                    <a href="#">友情链接</a>
+                    <em>|</em>
+                    <a href="#">客服中心</a>
+                </p>
+                <p align="center">
+                    <span>展会合作：010-00000000</span>
+                    <span class="ml10">招商热线：010-00000000</span>
+                    <span class="ml10">传真：010-00000000</span>
+                    <span class="ml10">电子邮箱：look@163.com</span>
+                </p>
+                <p align="center">Copyright 2008 www.******.com Inc.All Rights Reserved. ***** 版权所有</p>
+                <p align="center">增值电信业务经营许可证 000－0000000　 冀ICP备00000000号</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript">
+    function Register() {
+        $.ajax({
+            type: "post",
+            url: "/UserInfo/AddUser",
+            data: {
+                uName: $("#txtuName").val(),
+                uPwd: $("#txtuPwd").val(),
+                uTel: $("#txtuTel").val(),
+                Validata: $("#txtValidata").val()
+            },
+            success: function (result) {
+                if (result > 0) {
+                    alert("登录成功");
+                    location.href = "/UserInfo/";
+                }
+            }
+        })
+    }
+</script>

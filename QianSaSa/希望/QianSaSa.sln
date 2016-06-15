@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QSS.P2P.WebUI", "QSS.P2P.WebUI\QSS.P2P.WebUI.csproj", "{E912156A-422D-4DF1-AB8E-2A443E55A26C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QSS.P2P.DAL", "QSS.P2P.DAL\QSS.P2P.DAL.csproj", "{07863CB6-1BE3-40A3-846C-04041829C9AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QSS.P2P.Model", "QSS.P2P.Model\QSS.P2P.Model.csproj", "{38A86E9E-FB30-4720-9821-0A2B939D9797}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QSS.P2P.COMM", "QSS.P2P.COMM\QSS.P2P.COMM.csproj", "{4F197F1E-913E-4AA6-BD90-19A383061DCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QSS.P2P.BLL", "QSS.P2P.BLL\QSS.P2P.BLL.csproj", "{50D18EF6-476D-4FBB-9271-0EF682A3B302}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QSS.P2P.BackUI", "QSS.P2P.BackUI\QSS.P2P.BackUI.csproj", "{5549903C-5ACF-431A-AC9E-866183591C15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E912156A-422D-4DF1-AB8E-2A443E55A26C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E912156A-422D-4DF1-AB8E-2A443E55A26C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E912156A-422D-4DF1-AB8E-2A443E55A26C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E912156A-422D-4DF1-AB8E-2A443E55A26C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07863CB6-1BE3-40A3-846C-04041829C9AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07863CB6-1BE3-40A3-846C-04041829C9AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07863CB6-1BE3-40A3-846C-04041829C9AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07863CB6-1BE3-40A3-846C-04041829C9AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38A86E9E-FB30-4720-9821-0A2B939D9797}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38A86E9E-FB30-4720-9821-0A2B939D9797}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38A86E9E-FB30-4720-9821-0A2B939D9797}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38A86E9E-FB30-4720-9821-0A2B939D9797}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F197F1E-913E-4AA6-BD90-19A383061DCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F197F1E-913E-4AA6-BD90-19A383061DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F197F1E-913E-4AA6-BD90-19A383061DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F197F1E-913E-4AA6-BD90-19A383061DCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50D18EF6-476D-4FBB-9271-0EF682A3B302}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50D18EF6-476D-4FBB-9271-0EF682A3B302}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50D18EF6-476D-4FBB-9271-0EF682A3B302}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50D18EF6-476D-4FBB-9271-0EF682A3B302}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5549903C-5ACF-431A-AC9E-866183591C15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5549903C-5ACF-431A-AC9E-866183591C15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5549903C-5ACF-431A-AC9E-866183591C15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5549903C-5ACF-431A-AC9E-866183591C15}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

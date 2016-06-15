@@ -1,0 +1,99 @@
+﻿@using System.Data
+@{
+    ViewBag.Title = "XiangXi";
+}
+
+@{
+    DataTable Tender = ViewBag.Tender;
+    DataTable ZhaoBiao = ViewBag.ZhaoBiao;
+    DataTable UserInfo = ViewBag.UserInfo;
+}
+<table>
+    @foreach (DataRow item in UserInfo.Rows)
+    {
+        <tr>
+            <td>
+                @item["img"]
+            </td>
+            <td>
+                @item["Uname"]
+            </td>
+            <td>
+                @item["Adress"]
+            </td>
+        </tr>
+    }
+</table>
+<table>
+    @foreach (DataRow item in Tender.Rows)
+    {
+        <tr>
+            <td>
+                @item["Tbiaoti"]
+            </td>
+            <td>
+                @item["Tmoney"]
+            </td>
+            <td>
+                @item["Ttime"]
+            </td>
+            <td>
+                @item["Tstate"]
+            </td>
+            <td>
+                @item["Tmtime"]
+            </td>
+        </tr>
+    }
+</table>
+<table>
+    <tr>
+        <td>
+            投标人
+        </td>
+        <td>
+            债权所有人
+        </td>
+        <td>
+            投标金额
+        </td>
+        <td>
+            有效金额
+        </td>
+        <td>
+            投标时间
+        </td>
+        <td>
+            投标类型
+        </td>
+        <td>
+            状态
+        </td>
+    </tr>
+    @foreach (DataRow item in ZhaoBiao.Rows)
+    {
+        <tr>
+            <td>
+                @item["Uname"]
+            </td>
+            <td>
+                @item["Uname"]
+            </td>
+            <td>
+                @item["Zmoney"]
+            </td>
+            <td>
+                @item["Zmoney"]
+            </td>
+            <td>
+                @item["Ztime"]
+            </td>
+            <td>
+                手动
+            </td>
+            <td>
+                √
+            </td>
+        </tr>
+    }
+</table>

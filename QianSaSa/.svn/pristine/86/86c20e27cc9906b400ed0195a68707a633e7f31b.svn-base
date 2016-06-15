@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace QSS.P2P.Model
+{
+    public class ZhaoBiao
+    {
+        public int Zid { get; set; }//招标id
+        public decimal Zmoney { get; set; }//投资金额
+        public DateTime Ztime { get; set; }//投资日期
+        public int Uid { get; set; }//投资人
+
+        public int Tid { get; set; }//发标id
+    }
+}
